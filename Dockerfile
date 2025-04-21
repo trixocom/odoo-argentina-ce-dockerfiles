@@ -16,6 +16,8 @@ RUN apt-get update \
 
 RUN pip install setuptools==69.0.3 wheel --break-system-packages 
 RUN pip3 install git+https://gitlab.com/alitux/odoogci --break-system-packages
+RUN pip install git+https://gitlab.com/alitux/odooconf.git --break-system-packages
+
 RUN mkdir /tmp/download/
 
 ## Descarga localización Adhoc
